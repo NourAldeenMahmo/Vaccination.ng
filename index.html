@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/stylesheet_fonts.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+    />
+    <title>VACCINATION</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- ============= nav section ==================-->
+      <nav class="nav flex content_items" data-aos="zoom-in">
+        <div class="logo">
+          <a href="">Vaccination.ng</a>
+          <div class="underline_logo"></div>
+        </div>
+        <ul class="menu_list flex content_items">
+          <div class="flex flex_col content_items">
+            <li class="word_list_footer"><a href="#">Home</a></li>
+            <div class="underline_Home"></div>
+          </div>
+          <li><a href="#Services"> Services</a></li>
+          <li><a href="#Schedule"> Schedule</a></li>
+          <li><a href="#Contact_us"> Contact us</a></li>
+        </ul>
+        <div class="button_nav">
+          <a href="" class="button1 btn_primary">Check Status</a>
+        </div>
+        <img
+          src="images/pirger.png"
+          alt="menu icon"
+          class="Icon_menu"
+          onclick="toggleSidebar()"
+        />
+      </nav>
+      <!-- ============= aside section ==================-->
+      <aside class="sidebar flex flex_col" id="sidebar">
+        <ul>
+          <li class="aside_home"><a href="#">Home</a></li>
+          <li><a href="#Services"> Services</a></li>
+          <li><a href="#Schedule"> Schedule</a></li>
+          <li><a href="#Contact_us"> Contact us</a></li>
+        </ul>
+      </aside>
+
+      <!-- ============= header section ==================-->
+      <div class="body_header flex flex_col content_items">
+        <div class="container_header_body_header flex flex_col content_items">
+          <div class="header_body_header flex flex_col">
+            <h4 data-aos="slide-up" data-aos-delay="50">
+              Get Vaccinated. Boost your Immune System
+            </h4>
+            <h2 data-aos="fade-up" data-aos-delay="100">
+              COVID-19 Vaccination <br />
+              Got Easier With, <br />
+              <span>Vaccination.ng</span>
+            </h2>
+            <h5 data-aos="fade-up" data-aos-delay="300">
+              Vaccination.ng will help you find the nearest centre for
+              vaccination, in all 36 states in Nigeria.
+            </h5>
+            <div class="Button_header_body_header flex content_items">
+              <a
+                href=""
+                class="button1 btn_primary"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                >Get Vaccine</a
+              >
+              <a
+                href=""
+                class="button1 btn_secondary"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                >Help Centre</a
+              >
+            </div>
+          </div>
+          <!-- =================================================================== -->
+          <div class="card_body_header" data-aos="fade-up" data-aos-delay="400">
+            <div class="img1_card_body_header flex">
+              <img src="images/doctor-corona.png" alt="" />
+            </div>
+            <div class="img2_card_body_header flex">
+              <img src="images/coronavirus-images.png" alt="" />
+            </div>
+            <div class="card_person_card_body_header flex content_items">
+              <div class="flex">
+                <img
+                  src="images/Personal1.png"
+                  alt=""
+                  class="img_personal_card_person_card_body_header"
+                />
+                <img
+                  src="images/Personal2.png"
+                  alt=""
+                  class="img_personal_card_person_card_body_header"
+                />
+                <img
+                  src="images/Personal3.png"
+                  alt=""
+                  class="img_personal_card_person_card_body_header"
+                />
+              </div>
+              <div class="titel_card_person_card_body_header">
+                <h2>20+</h2>
+                <span>Specialists</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =================================================================== -->
+
+        <div class="footer_body_header" id="Schedule">
+          <div class="titel_footer_body_header flex" data-aos="fade-up">
+            <svg class="icon">
+              <use xlink:href="../Icons/SVGSprite.svg#click"></use>
+            </svg>
+            <h5>Schedule your Vaccination</h5>
+          </div>
+          <div
+            class="container_header_footer_body_header flex flex_col content_items2"
+            data-aos="fade-up"
+          >
+            <div>
+              <div
+                class="titel_footer_body_header flex content_items2"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <svg class="icon">
+                  <use xlink:href="../Icons/SVGSprite.svg#location"></use>
+                </svg>
+                <div>
+                  <h4>Location</h4>
+                  <h5>Ikeja Lagos, Nigeria</h5>
+                </div>
+              </div>
+              <div
+                class="titel_footer_body_header flex content_items2"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <svg class="icon">
+                  <use xlink:href="../Icons/SVGSprite.svg#calendar"></use>
+                </svg>
+                <div>
+                  <h4>Date</h4>
+                  <h5>29 February, 2022</h5>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex_col content_items2">
+              <div
+                class="titel_footer_body_header flex content_items"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <svg class="icon">
+                  <use xlink:href="../Icons/SVGSprite.svg#shield"></use>
+                </svg>
+                <div>
+                  <h4>Vaccine Type</h4>
+                  <h5>Mordena</h5>
+                </div>
+              </div>
+              <a
+                href=""
+                class="button1 btn_primary flex"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                Submit
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ========= body section    ========================================================== -->
+
+    <div class="container_Logo_img flex content_items">
+      <img
+        src="images/Moderna_logo.png"
+        alt=""
+        data-aos="fade-up"
+        data-aos-delay="200"
+      />
+      <img
+        src="images/Pfizer_logo.png"
+        alt=""
+        data-aos="fade-up"
+        data-aos-delay="400"
+      />
+      <img
+        src="images/zeneca-logo.png"
+        alt=""
+        data-aos="fade-up"
+        data-aos-delay="600"
+      />
+      <img
+        src="images/sinovac-logo.png"
+        alt=""
+        data-aos="fade-up"
+        data-aos-delay="800"
+      />
+    </div>
+    <!-- =================================================================== -->
+
+    <div class="card_body">
+      <div
+        class="container_body flex flex_col content_items"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div class="titel_card_body" data-aos="fade-up" data-aos-delay="400">
+          <h3>Check your COVID-19 result on our Database</h3>
+        </div>
+        <div
+          class="content_card_body flex flex_col content_items2"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Okeowo"
+            class="input"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="NIK Number"
+            class="input"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          />
+          <a
+            href=""
+            class="button1 btn_secondary flex"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            Check
+          </a>
+        </div>
+        <div class="container_span" data-aos="fade-up" data-aos-delay="900">
+          <span class="span"
+            >Need a certificate for your COVID-19 result? Please click
+            here</span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- =================================================================== -->
+
+    <div class="container_advice flex flex_col" id="Services">
+      <div class="titel_container_advice">
+        <h2 data-aos="fade-up" data-aos-delay="200">
+          Why get vaccinated today?
+        </h2>
+        <h5 data-aos="fade-up" data-aos-delay="300">
+          Magna adipiscing at elit at ornare lectus nibh lorem. <br />
+          Ac, sed ac lorem pellentesque vestibulum risus matti. <br />
+          In molestie condimentum malesuada non.
+        </h5>
+      </div>
+      <div
+        class="container_advice_cards_groops_container_advice flex flex_col content_items"
+      >
+        <div
+          class="card_container_advice flex flex_col"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <svg class="icon" data-aos="fade-up" data-aos-delay="500">
+            <use xlink:href="../Icons/SVGSprite.svg#shield"></use>
+          </svg>
+          <span data-aos="fade-left" data-aos-delay="600"
+            >Protects your immune <br />
+            system against viruses</span
+          >
+          <p data-aos="fade-left" data-aos-delay="700">
+            Velit ut consectetur mauris, orci amet, faucibus. <br />
+            Sit turpis fringilla ipsum pretium, dictum. Dolor eget vel nulla
+            lorem ac.
+          </p>
+          <a
+            href=""
+            class="button1 btn_secondary"
+            data-aos="fade-left"
+            data-aos-delay="800"
+          >
+            Read More <sapn> –⟩</sapn>
+          </a>
+        </div>
+        <div
+          class="cards_groops_container_advice flex flex_col"
+          data-aos="fade-up"
+        >
+          <div class="card_container_advice flex flex_col">
+            <svg class="icon" data-aos="fade-up" data-aos-delay="100">
+              <use xlink:href="../Icons/SVGSprite.svg#persons"></use>
+            </svg>
+            <h3 data-aos="fade-left" data-aos-delay="300">
+              Minimize the spread of the Virus
+            </h3>
+            <a
+              href=""
+              class="button1 btn_secondary"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              Read More <sapn> –⟩</sapn>
+            </a>
+          </div>
+          <div class="card_container_advice flex flex_col" data-aos="fade-up">
+            <svg class="icon dsd" data-aos="fade-up" data-aos-delay="100">
+              <use xlink:href="../Icons/SVGSprite.svg#Thermometer"></use>
+            </svg>
+            <h3 data-aos="fade-left" data-aos-delay="300">Protect yourself</h3>
+            <a
+              href=""
+              class="button1 btn_secondary"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              Read More <sapn> –⟩</sapn>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =================================================================== -->
+    <div class="section_info flex flex_col content_items">
+      <div class="titel_section_info">
+        <h2 data-aos="fade-up">Get your vaccine registration today</h2>
+      </div>
+      <div
+        class="img_section_info flex flex_col content_items"
+        data-aos="fade-up"
+      >
+        <img src="images/coronavirus-images-2.png" alt="coronavirus images" />
+        <h3>COVID-19 Vaccine</h3>
+        <div class="flex flex_col">
+          <p>Verify Status</p>
+        </div>
+      </div>
+      <div class="info_section_info flex flex_col content_items2">
+        <h4 class="h4_info_section_info" data-aos="fade-up">
+          Patient’s Full Name
+        </h4>
+        <input
+          type="text"
+          name="name"
+          placeholder="Full name"
+          class="input"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        />
+        <h4 class="h4_info_section_info" data-aos="fade-up">
+          Patient’s Full Name
+        </h4>
+        <p class="p_info_section_info" data-aos="fade-up" data-aos-delay="100">
+          Notifications for appointment and reminders will be sent to this
+          provided number
+        </p>
+        <div class="container_num flex flex_col">
+          <input
+            type="tel"
+            id="phone"
+            name="number"
+            placeholder="Phone number"
+            class="input"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          />
+          <a
+            href=""
+            class="button1 btn_primary"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            Verify
+          </a>
+        </div>
+        <div class="Check_your_status flex flex_col">
+          <a
+            href=""
+            class="button1 btn_primary"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            Submit
+          </a>
+          <div class="Check_your_status2 flex content_items">
+            <p data-aos="fade-up" data-aos-delay="300">Already registered ?</p>
+            <a
+              href=""
+              class="button1 btn_secondary"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              Check your status
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container_advice2 flex flex_col">
+      <div class="titel_container_advice flex flex_col content_items">
+        <h4 data-aos="fade-up">COVID-19 Symptoms</h4>
+        <h2 data-aos="fade-up" data-aos-delay="200">
+          <span>COVID-19</span> Symptoms
+        </h2>
+        <h5 data-aos="fade-up" data-aos-delay="300">
+          Adipiscing nec etiam tortor elit quisque. Arcu aliquet convallis
+          aenean eu velit. Mi vestibulum, ullamcorper venenatis imperdiet augue
+          arcu donec neque.
+        </h5>
+      </div>
+      <div class="container_img_personal flex flex_col">
+        <div class="container_coronavirus1 flex content_items">
+          <div
+            class="titel_footer_body_header flex content_items3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img src="images/coronavirus-images.png" alt="" />
+            <div class="container_h4">
+              <h4><span>High Fever</span></h4>
+            </div>
+          </div>
+          <div
+            class="titel_footer_body_header flex content_items3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img src="images/coronavirus-images.png" alt="" />
+            <div class="container_h4">
+              <h4><span>Loss of sense of taste</span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="container_coronavirus2 flex content_items">
+          <div
+            class="titel_footer_body_header flex content_items3"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img src="images/coronavirus-images.png" alt="" />
+            <div class="container_h4 container_h42">
+              <h4><span>Loss sense of smell</span></h4>
+            </div>
+          </div>
+          <div
+            class="titel_footer_body_header flex content_items3"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img src="images/coronavirus-images.png" alt="" />
+            <div class="container_h4">
+              <h4><span>Difficulty Breathing</span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="container_coronavirus3 flex content_items">
+          <div
+            class="titel_footer_body_header flex content_items3"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <img src="images/coronavirus-images.png" alt="" />
+            <div class="container_h4">
+              <h4><span>Dry cough</span></h4>
+            </div>
+          </div>
+          <div
+            class="titel_footer_body_header flex content_items3"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <img src="images/coronavirus-images.png" alt="" />
+            <div class="container_h4">
+              <h4><span>Sore Throat</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container_advice3 flex flex_col">
+      <div class="titel_container_advice flex flex_col content_items">
+        <h4 data-aos="fade-up"><span>FEEDBACK</span></h4>
+        <h1 data-aos="fade-up" data-aos-delay="200">What our Patients Think</h1>
+        <h5 data-aos="fade-up" data-aos-delay="300">
+          Adipiscing nec etiam tortor elit quisque. Arcu aliquet convallis
+          aenean eu velit. Mi vestibulum, ullamcorper venenatis imperdiet augue
+          arcu donec neque.
+        </h5>
+      </div>
+      <div
+        class="container_cards_container_advice3 flex flex_col content_items"
+      >
+        <div
+          class="card flex flex_col content_items"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <div class="hero_card flex">
+            <div data-aos="fade-left" data-aos-delay="300">
+              <img
+                src="images/personal3_FeedBack.png"
+                class="img_hero"
+                alt="Hero Image"
+              />
+            </div>
+            <div class="flex flex_col hero_name">
+              <h3 data-aos="fade-left" data-aos-delay="400">Oyindamola Maja</h3>
+              <p data-aos="fade-left" data-aos-delay="400">Badagry, Lagos</p>
+            </div>
+          </div>
+          <blockquote class="Container" data-aos="fade-up" data-aos-delay="500">
+            “Been stressing about a close centre to get the
+            <span class="span_covid Container">covid-19</span> vaccine, until i
+            tried Vaccination.ng”
+          </blockquote>
+        </div>
+        <div
+          class="card flex flex_col content_items"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
+          <div class="hero_card flex">
+            <div data-aos="fade-left" data-aos-delay="300">
+              <img
+                src="images/personal2_FeedBack.png"
+                class="img_hero"
+                alt="Hero Image"
+              />
+            </div>
+            <div class="flex flex_col hero_name">
+              <h3 data-aos="fade-left" data-aos-delay="400">Oyindamola Maja</h3>
+              <p data-aos="fade-left" data-aos-delay="400">Badagry, Lagos</p>
+            </div>
+          </div>
+          <blockquote class="Container" data-aos="fade-up" data-aos-delay="500">
+            “Been stressing about a close centre to get the
+            <span class="span_covid Container">covid-19</span> vaccine, until i
+            tried Vaccination.ng”
+          </blockquote>
+        </div>
+        <div
+          class="card flex flex_col content_items"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+        >
+          <div class="hero_card flex">
+            <div data-aos="fade-left" data-aos-delay="300">
+              <img
+                src="images/personal1_FeedBack.png"
+                class="img_hero"
+                alt="Hero Image"
+              />
+            </div>
+            <div class="flex flex_col hero_name">
+              <h3 data-aos="fade-left" data-aos-delay="400">Oyindamola Maja</h3>
+              <p data-aos="fade-left" data-aos-delay="400">Badagry, Lagos</p>
+            </div>
+          </div>
+          <blockquote
+            class="Container"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            “Been stressing about a close centre to get the
+            <span class="span_covid Container">covid-19</span> vaccine, until i
+            tried Vaccination.ng”
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container_top_footer" data-aos="fade-up">
+        <div class="container_top_footer2 flex flex_col content_items3">
+          <h2 data-aos="fade-left" data-aos-delay="200">Get a quote</h2>
+          <p data-aos="fade-left" data-aos-delay="200">
+            Please do enter your email address below
+          </p>
+          <div
+            class="container_input_send"
+            data-aos="fade-lup"
+            data-aos-delay="400"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="lenux.ng@gmail.com"
+              class="input"
+            />
+            <a href="" class="flex content_items3">
+              <svg class="icon icon_send">
+                <use xlink:href="../Icons/SVGSprite.svg#send"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_footer">
+        <div>
+          <h3>Vaccination.ng</h3>
+          <div class="underline_logo"></div>
+        </div>
+        <ol class="list_footer">
+          <li class="word_list_footer"><a href="#">Home</a></li>
+          <li><a href="#Services"> Services</a></li>
+          <li><a href="#Schedule"> Schedule</a></li>
+          <li><a href="#Contact_us"> Contact us</a></li>
+        </ol>
+        <div class="Contact_info flex content_items" id="Contact_us">
+          <a href="https://www.youtube.com/@Nour_Aldeen_Mahmo">
+            <svg class="icon">
+              <use xlink:href="../Icons/SVGSprite.svg#logo-youtube"></use>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/nour.aldeen.mahmo/">
+            <svg class="icon">
+              <use xlink:href="../Icons/SVGSprite.svg#logo-Instagram"></use>
+            </svg>
+          </a>
+          <a href="https://x.com/AldeenMahmo">
+            <svg class="icon">
+              <use xlink:href="../Icons/SVGSprite.svg#logo-Twitter"></use>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/nouraldeen.mahmo">
+            <svg class="icon">
+              <use xlink:href="../Icons/SVGSprite.svg#logo-Facebook"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="JavaScript/JavaScript.JS"></script>
+  </body>
+</html>
